@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/com/group/libraryapp/controller/user/UserController.java" value="0300d369-a2bf-4589-936f-90fe417122da" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/group/libraryapp/repository/user/UserJdbcRepository.java" value="0300d369-a2bf-4589-936f-90fe417122da" />
+  </component>
+</project>
