@@ -1,12 +1,15 @@
 package com.group.libraryapp.domain.user;
 
 import com.group.libraryapp.domain.user.loanhistory.UserLoanHistory;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class User {
 
     @Id
@@ -23,8 +26,6 @@ public class User {
     // 관계의 주인이 UserLoanHistory의 user 필드임을 알려주기 위해 mappedBy를 사용함(mappedBy가 없으면 관계가 여러 쌍일때 분간하기 어려움).
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<UserLoanHistory> userLoanHistories = new ArrayList<>();
-
-    protected User() {}
 
     public User(String name, Integer age) {
         if(name == null || name.isBlank()) {

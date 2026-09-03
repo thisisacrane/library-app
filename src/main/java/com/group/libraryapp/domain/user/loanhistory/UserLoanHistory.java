@@ -2,7 +2,7 @@ package com.group.libraryapp.domain.user.loanhistory;
 
 import com.group.libraryapp.domain.user.User;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity // 데이터베이스의 테이블과 직접 매핑되는 자바 클래스
 public class UserLoanHistory {
